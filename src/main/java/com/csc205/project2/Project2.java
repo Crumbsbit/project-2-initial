@@ -9,7 +9,8 @@ import java.util.List;
  * Modify the driver as needed to demonstrate your classes.
  *
  */
-public class Project2 {
+public class Project2
+{
 
     public static void main(String[] args) {
 
@@ -17,24 +18,20 @@ public class Project2 {
         The following code works with the example design given.
          */
 
-        /*ThreeDimensionalShape sphere = new Sphere(2.0);
+        ThreeDimensionalShape sphere = new Sphere(2.0);
         ThreeDimensionalShape cube = new Cube(5.0);
         ThreeDimensionalShape cylinder = new Cylinder(4.0, 1.0);
+        ThreeDimensionalShape Cone = new Cone(7.0, 3.0);
 
         // We'll cover this stuff in module 4
         List<ThreeDimensionalShape> shapes = new ArrayList<>();
         shapes.add(sphere);
         shapes.add(cube);
         shapes.add(cylinder);
+        shapes.add(Cone);
 
-        shapes.forEach(System.out::println);*/
+        shapes.forEach(System.out::println);
 
-        /*
-        The following code works with the code given.
-         */
-
-        Sphere sphere = new Sphere(2.0);
-        System.out.println(sphere);
     }
 
 }

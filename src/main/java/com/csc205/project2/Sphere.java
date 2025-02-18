@@ -1,37 +1,46 @@
 package com.csc205.project2;
 
-public class Sphere {
-
+public class Sphere extends Shape
+{
     private double radius;
 
-    public Sphere() {
+    public Sphere()
+    {
         super();
         this.radius = 0.0;
     }
 
-    public Sphere(double v) {
+    public Sphere(double radius)
+    {
         super();
-        this.radius = v;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
         this.radius = radius;
     }
 
-    public double surfaceArea() {
-        return 4.0 * Math.PI * Math.pow(radius, 2);
+    public double getRadius()
+    {
+        return radius;
     }
 
-    public double volume() {
-        return (4.0/3.0) * Math.PI * Math.pow(radius, 3);
+    public void setRadius(double radius)
+    {
+        this.radius = radius;
     }
 
     @Override
-    public String toString() {
+    public double surfaceArea()
+    {
+        return 4 * Math.PI * Math.pow(radius, 2);
+    }
+
+    @Override
+    public double volume()
+    {
+        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+    }
+
+    @Override
+    public String toString()
+    {
         final StringBuilder sb = new StringBuilder("Sphere {");
         sb.append("radius=").append(radius);
         sb.append(", surface area=").append(surfaceArea());
